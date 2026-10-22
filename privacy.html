@@ -5,30 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Turnova Privacy Policy</title>
-    <meta name="theme-color" content="#4f46e5">
+    <meta name="theme-color" content="#0E7C86">
     <link rel="icon" href="logo_name.png">
     <style>
         :root {
-            --primary: #4f46e5;
-            /* app primary colour: change here */
-            --primary-2: #7c3aed;
-            /* gradient end */
-            --bg: #f5f5fb;
+            --primary: #0E7C86;
+            /* app primary colour */
+            --hero-1: #0E7C86;
+            /* header gradient start */
+            --hero-2: #0A5560;
+            /* header gradient end */
+            --bg: #f2f8f9;
             --card: #ffffff;
-            --text: #1b1b25;
-            --muted: #62627a;
-            --line: #e4e4f0;
+            --text: #14232a;
+            --muted: #5b7076;
+            --line: #dcebee;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --primary: #8b87ff;
-                --primary-2: #a78bfa;
-                --bg: #0f0f17;
-                --card: #181824;
-                --text: #ececf6;
-                --muted: #9a9ab3;
-                --line: #2a2a3c;
+                --primary: #4fc3cc;
+                /* lighter teal so headings stay readable */
+                --hero-1: #0E7C86;
+                --hero-2: #093d45;
+                --bg: #0b1417;
+                --card: #121f24;
+                --text: #e6f1f3;
+                --muted: #8fa8ae;
+                --line: #1f3138;
             }
         }
 
@@ -45,7 +49,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, var(--primary), var(--primary-2));
+            background: linear-gradient(135deg, var(--hero-1), var(--hero-2));
             padding: 36px 20px 72px;
             border-radius: 0 0 32px 32px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
@@ -66,7 +70,8 @@
 
         .logo img {
             height: 34px;
-            display: block
+            display: block;
+            filter: brightness(0)
         }
 
         header h1 {
