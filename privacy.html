@@ -139,36 +139,60 @@
         <div class="wrap">
             <span class="logo"><img src="logo_name.png" alt="Turnova"></span>
             <h1>Privacy Policy</h1>
-            <p>Last updated: October 22, 2026</p>
+            <p>Last updated: October 31, 2026</p>
         </div>
     </header>
 
     <main>
         <div class="card">
-            <p>Turnova lets you join a barber shop or salon queue from your phone. This policy explains what we collect,
-                why, and the choices you have.</p>
+            <p>Turnova lets you join a barber shop or salon queue from your phone. Shop owners manage their queue from
+                the Turnova shop dashboard. This policy explains what we collect, why, and the choices you have.</p>
         </div>
 
         <div class="card">
-            <h2>What we collect</h2>
+            <h2>What we collect from customers</h2>
             <ul>
                 <li><b>Account details:</b> your name and email, or your Google account name and email if you sign in
-                    with Google.</li>
+                    with Google. If you sign up with email, we ask you to verify your email address.</li>
                 <li><b>Phone number:</b> if you provide one, so the shop can call you if you are late. Only staff of the
                     shop you joined can see it.</li>
                 <li><b>Queue activity:</b> the shops you join, services and barber you choose, and the times you join,
                     are called, and finish.</li>
-                <li><b>Ratings and reviews:</b> stars and optional comments you submit after a visit.</li>
-                <li><b>Favourites and preferences:</b> shops you favourite and the preferences you choose in the app
-                    (such as area and language).</li>
+                <li><b>Ratings and reviews:</b> star ratings, the service you rated, and optional comments you submit
+                    after a visit.</li>
+                <li><b>Favourites and preferences:</b> shops you favourite and the preferences you choose when you
+                    first open the app or later in Profile: the languages you speak, who you are booking for (men's,
+                    women's or everyone), your area or city, your search distance, and how many turns away you want to
+                    be alerted.</li>
                 <li><b>Device token:</b> an identifier used to send you queue notifications.</li>
             </ul>
         </div>
 
         <div class="card">
+            <h2>What we collect from shop owners</h2>
+            <p>If you register a shop, we collect your account details and the shop information you enter:</p>
+            <ul>
+                <li>Shop name, address and map location, and whether the shop serves men, women or everyone.</li>
+                <li>Services offered, and the names and languages of the barbers you add.</li>
+                <li>An optional Google review link or Place ID for your shop.</li>
+            </ul>
+            <p>Shop information is shown to customers in the app so they can find and join your queue. Barbers do not
+                need their own accounts; only the shop owner signs in to the dashboard.</p>
+        </div>
+
+        <div class="card">
             <h2>Location</h2>
-            <p>If you tap "Use my location", the app uses your phone's location only to sort shops by distance on your
-                device. Your location is never uploaded or stored by us.</p>
+            <p>Location is optional. If you turn it on, the app uses your phone's location only to find and sort shops
+                near you (within the distance you choose). Your location is never stored by us.</p>
+            <p>If you turn location off, you can type your area or city instead. That text is saved in your preferences
+                and used to show shops in your area.</p>
+        </div>
+
+        <div class="card">
+            <h2>Notifications</h2>
+            <p>We send push notifications about your place in a queue, such as when you are a set number of turns away
+                and when it is your turn. You can change how early you are alerted in your preferences, or turn
+                notifications off in your phone settings.</p>
         </div>
 
         <div class="card">
@@ -176,7 +200,8 @@
             <ul>
                 <li>To run the queue, show your position and estimated wait, and notify you when it is your turn.</li>
                 <li>To let shops manage their queue and contact you if you are late.</li>
-                <li>To show shop ratings and your visit history.</li>
+                <li>To show nearby shops, shop ratings, and your visit history.</li>
+                <li>To show shops and barbers that match your language and booking preferences.</li>
                 <li>To keep the service secure and fix problems.</li>
             </ul>
             <p>We do not sell your personal information and we do not show ads.</p>
@@ -188,20 +213,32 @@
                 <li>Other customers see a masked version of your name in a queue.</li>
                 <li>Shop staff see the names and details of people in their own shop's queue.</li>
                 <li>Reviews you write may be shown with your first name or a masked name.</li>
+                <li>Shop details, barber names and languages, and average ratings are visible to customers.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>Services we use</h2>
-            <p>We use Supabase (database and sign-in), Firebase Cloud Messaging (notifications) and Google Sign-In.
-                These providers process data on our behalf under their own privacy policies.</p>
+            <h2>Google reviews</h2>
+            <p>Some shops add a link to their Google reviews. If you tap it, you leave Turnova and Google's privacy
+                policy applies. We do not see what you write there.</p>
         </div>
 
         <div class="card">
+            <h2>Services we use</h2>
+            <p>We use Supabase (database and sign-in), Firebase Cloud Messaging (notifications), Firebase Hosting (the
+                shop dashboard web app) and Google Sign-In. These providers process data on our behalf under their own
+                privacy policies.</p>
+        </div>
+
+        <div class="card" id="delete-account">
             <h2>Keeping and deleting your data</h2>
-            <p>We keep your data while your account is active. You can delete your account in the app under Profile,
-                then Delete account. This removes your account and personal data from our systems. You can also email us
-                at the address below to request deletion.</p>
+            <p>We keep your data while your account is active.</p>
+            <p><b>Customers:</b> you can delete your account in the app under Profile, then Delete account. This
+                removes your account and personal data from our systems.</p>
+            <p><b>Shop owners:</b> you can delete your account and shop together from the app. You will be asked for a
+                reason. Deletion is scheduled with a recovery period of 30 days, during which your shop is hidden from
+                customers. After that period, your account, shop and related data are permanently deleted.</p>
+            <p>You can also email us at the address below to request deletion.</p>
         </div>
 
         <div class="card">
@@ -222,7 +259,7 @@
 
         <div class="card">
             <h2>Contact</h2>
-            <p>Questions or deletion requests: <a href="mailto:support.turnova@gmail.com">support.turnova@gmail.co</a>
+            <p>Questions or deletion requests: <a href="mailto:support.turnova@gmail.com">support.turnova@gmail.com</a>
             </p>
         </div>
     </main>
