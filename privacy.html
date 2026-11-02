@@ -139,7 +139,7 @@
         <div class="wrap">
             <span class="logo"><img src="logo_name.png" alt="Turnova"></span>
             <h1>Privacy Policy</h1>
-            <p>Last updated: October 31, 2026</p>
+            <p>Last updated: November 2, 2026</p>
         </div>
     </header>
 
@@ -154,10 +154,12 @@
             <ul>
                 <li><b>Account details:</b> your name and email, or your Google account name and email if you sign in
                     with Google. If you sign up with email, we ask you to verify your email address.</li>
-                <li><b>Phone number:</b> if you provide one, so the shop can call you if you are late. Only staff of the
-                    shop you joined can see it.</li>
+                <li><b>Phone number:</b> if you provide one, so the shop can call you if you are late. Only the owner of
+                    the shop you joined can see it. Barbers cannot.</li>
                 <li><b>Queue activity:</b> the shops you join, services and barber you choose, and the times you join,
                     are called, and finish.</li>
+                <li><b>Visits and points:</b> your completed visits, points earned and rewards you redeem. Points do not
+                    expire.</li>
                 <li><b>Ratings and reviews:</b> star ratings, the service you rated, and optional comments you submit
                     after a visit.</li>
                 <li><b>Favourites and preferences:</b> shops you favourite and the preferences you choose when you
@@ -165,6 +167,8 @@
                     women's or everyone), your area or city, your search distance, and how many turns away you want to
                     be alerted.</li>
                 <li><b>Device token:</b> an identifier used to send you queue notifications.</li>
+                <li><b>Advertising data:</b> to show ads, Google AdMob may collect your device's advertising ID, IP
+                    address, device and app information, and how you interact with ads. See "Advertising" below.</li>
             </ul>
         </div>
 
@@ -175,9 +179,17 @@
                 <li>Shop name, address and map location, and whether the shop serves men, women or everyone.</li>
                 <li>Services offered, and the names and languages of the barbers you add.</li>
                 <li>An optional Google review link or Place ID for your shop.</li>
+                <li>Your contact details, and the branch name if you run a franchise. New shops are reviewed by the
+                    Turnova team before they are shown to customers, and the team may contact you using these details.
+                </li>
             </ul>
-            <p>Shop information is shown to customers in the app so they can find and join your queue. Barbers do not
-                need their own accounts; only the shop owner signs in to the dashboard.</p>
+            <p>Shop information is shown to customers in the app so they can find and join your queue. Shop owners can
+                also give barbers access with an invite code. A barber signs in and sees only
+                their own chair: the customer's name and queue number, with controls to call, start and finish.
+                Barbers cannot see customer phone numbers.</p>
+            <p>Shop owners can export their shop's monthly queue history as a CSV file. Customer phone numbers are
+                included only if the owner turns that option on. Owners are responsible for keeping exported files safe.
+            </p>
         </div>
 
         <div class="card">
@@ -191,8 +203,21 @@
         <div class="card">
             <h2>Notifications</h2>
             <p>We send push notifications about your place in a queue, such as when you are a set number of turns away
-                and when it is your turn. You can change how early you are alerted in your preferences, or turn
-                notifications off in your phone settings.</p>
+                and when it is your turn. Shops you have joined may also send offers, and a shop may send a request if
+                a walk-in customer asks to go ahead of you (you can accept or decline). You can change how early you
+                are alerted in your preferences, or turn notifications off in your phone settings.</p>
+
+        </div>
+
+        <div class="card" id="advertising">
+            <h2>Advertising</h2>
+            <p>Turnova shows ads provided by Google AdMob. AdMob uses your device's advertising ID and other device
+                information to deliver ads and measure how they perform, and it may use this to show ads based on your
+                interests. We do not give AdMob your name, email, phone number or queue activity.</p>
+            <p>You can reset your advertising ID or turn off ad personalisation in your phone's settings (usually under
+                Privacy or Google, then Ads; the exact steps vary by device). Learn more in
+                <a href="https://policies.google.com/technologies/ads">how Google uses data from ads</a>.
+            </p>
         </div>
 
         <div class="card">
@@ -202,18 +227,22 @@
                 <li>To let shops manage their queue and contact you if you are late.</li>
                 <li>To show nearby shops, shop ratings, and your visit history.</li>
                 <li>To show shops and barbers that match your language and booking preferences.</li>
+                <li>To show ads in the app and keep Turnova running.</li>
                 <li>To keep the service secure and fix problems.</li>
             </ul>
-            <p>We do not sell your personal information and we do not show ads.</p>
+            <p>We do not sell your account details or queue activity.</p>
         </div>
 
         <div class="card">
             <h2>Who can see what</h2>
             <ul>
                 <li>Other customers see a masked version of your name in a queue.</li>
-                <li>Shop staff see the names and details of people in their own shop's queue.</li>
+                <li>Shop owners see the names and details of people in their own shop's queue.</li>
                 <li>Reviews you write may be shown with your first name or a masked name.</li>
                 <li>Shop details, barber names and languages, and average ratings are visible to customers.</li>
+                <li>Shop owners can search the customers of their own shop by mobile number and see visit counts, points
+                    and redeemed rewards for that shop.</li>
+                <li>Barbers see only a customer's name and queue number.</li>
             </ul>
         </div>
 
@@ -226,7 +255,8 @@
         <div class="card">
             <h2>Services we use</h2>
             <p>We use Supabase (database and sign-in), Firebase Cloud Messaging (notifications), Firebase Hosting (the
-                shop dashboard web app) and Google Sign-In. These providers process data on our behalf under their own
+                shop dashboard web app), Google Sign-In and Google AdMob (ads). These providers process data on our
+                behalf under their own
                 privacy policies.</p>
         </div>
 
