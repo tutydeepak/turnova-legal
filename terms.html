@@ -1,122 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Turnova – Terms of use</title>
-<style>
-  :root {
-    --bg: #ffffff;
-    --text: #1d2125;
-    --muted: #5b6570;
-    --line: #e2e6ea;
-    --accent: #0f6b6b;
-    color-scheme: light dark;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #12171b;
-      --text: #e8ecef;
-      --muted: #9aa5ae;
-      --line: #2a333a;
-      --accent: #5cc4c4;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
-  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; }
-  h2 { font-size: 1.15rem; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
-  p, li { max-width: 68ch; }
-  ul { padding-left: 1.2em; }
-  li { margin: 4px 0; }
-  .meta { color: var(--muted); margin: 0 0 24px; }
-  a { color: var(--accent); }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turnova Terms of Use</title>
+    <meta name="theme-color" content="#0E7C86">
+    <link rel="icon" href="logo-round.png">
+    <style>
+        :root {
+            --primary: #0E7C86;
+            /* app primary colour */
+            --hero-1: #0E7C86;
+            /* header gradient start */
+            --hero-2: #0A5560;
+            /* header gradient end */
+            --bg: #f2f8f9;
+            --card: #ffffff;
+            --text: #14232a;
+            --muted: #5b7076;
+            --line: #dcebee;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #4fc3cc;
+                /* lighter teal so headings stay readable */
+                --hero-1: #0E7C86;
+                --hero-2: #093d45;
+                --bg: #0b1417;
+                --card: #121f24;
+                --text: #e6f1f3;
+                --muted: #8fa8ae;
+                --line: #1f3138;
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.65;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--hero-1), var(--hero-2));
+            padding: 36px 20px 72px;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+        }
+
+        .wrap {
+            max-width: 760px;
+            margin: 0 auto
+        }
+
+        .logo {
+            display: inline-flex;
+            background: #fff;
+            border-radius: 16px;
+            padding: 8px 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, .15);
+        }
+
+        .logo img {
+            height: 34px;
+            display: block;
+            filter: brightness(0)
+        }
+
+        header h1 {
+            color: #fff;
+            margin: 18px 0 4px;
+            font-size: 1.9rem
+        }
+
+        header p {
+            color: rgba(255, 255, 255, .85);
+            margin: 0
+        }
+
+        main {
+            max-width: 760px;
+            margin: -44px auto 40px;
+            padding: 0 16px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            padding: 22px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .06);
+        }
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+            color: var(--primary)
+        }
+
+        p {
+            margin: 8px 0
+        }
+
+        ul {
+            margin: 8px 0;
+            padding-left: 20px
+        }
+
+        li {
+            margin: 4px 0
+        }
+
+        a {
+            color: var(--primary);
+            font-weight: 600
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: .85rem;
+            padding: 0 16px 36px
+        }
+    </style>
 </head>
+
 <body>
-<main>
-  <h1>Terms of use</h1>
-  <p class="meta">Turnova · Last updated: November 2026</p>
 
-  <p>These terms apply when you use the Turnova app (customers) or the Turnova Staff web app (shop owners). By creating an account or using the app, you agree to them. If you don't agree, please don't use Turnova.</p>
-  <p>Our <a href="YOUR_PRIVACY_POLICY_URL">Privacy policy</a> explains what data we collect and how we use it. It is part of these terms.</p>
+    <header>
+        <div class="wrap">
+            <span class="logo"><img src="logo_name.png" alt="Turnova"></span>
+            <h1>Terms of Use</h1>
+            <p>Last updated: November 7, 2026</p>
+        </div>
+    </header>
 
-  <h2>1. What Turnova does</h2>
-  <p>Turnova lets you find barber shops and salons, join their queue from your phone, and follow your place in line. Turnova connects customers and shops. We don't provide haircuts or other services ourselves, and each shop is responsible for the services it offers.</p>
+    <main>
+        <div class="card">
+            <p>These terms apply when you use the Turnova app (customers) or the Turnova shop dashboard (shop owners
+                and barbers). By creating an account or using Turnova, you agree to them. If you don't agree, please
+                don't use Turnova. Our <a href="privacy.html">Privacy Policy</a> explains how we handle your data and
+                is part of these terms.</p>
+            <p>Turnova is operated by Nothing Makers, Chennai, India.</p>
+        </div>
 
-  <h2>2. Your account</h2>
-  <ul>
-    <li>You must be at least 18 to create an account. You may book for a family member, including a child, using your own account.</li>
-    <li>Give accurate details, including a working mobile number. Shops use your name and number to run the queue and to reach you if you are late.</li>
-    <li>Keep your sign-in details private. You are responsible for activity on your account.</li>
-    <li>You can delete your account at any time from Profile. Deleting it permanently removes your data as described in the Privacy policy.</li>
-  </ul>
+        <div class="card">
+            <h2>What Turnova does</h2>
+            <p>Turnova lets you find barber shops and salons, join their queue from your phone and follow your place
+                in line. Turnova connects customers and shops. We don't provide haircuts or other services ourselves,
+                and each shop is responsible for the services it offers.</p>
+        </div>
 
-  <h2>3. Queues and waiting times</h2>
-  <ul>
-    <li>Waiting times shown in the app are estimates. They can change when other customers are served faster or slower, or when a shop pauses or delays its queue.</li>
-    <li>Joining a queue does not guarantee a service at a particular time.</li>
-    <li>When it is nearly your turn, please arrive on time. A shop may skip or remove you from the queue if you don't arrive when called. Shops set their own rules for late and missed turns.</li>
-    <li>Please leave the queue if you can no longer come, so others are not kept waiting.</li>
-  </ul>
+        <div class="card">
+            <h2>Your account</h2>
+            <ul>
+                <li>You must be at least 18 to create an account. You may book for a family member, including a
+                    child, using your own account.</li>
+                <li>Give accurate details, including a working mobile number. Shops use your name and number to run
+                    the queue and to reach you if you are late.</li>
+                <li>Keep your sign-in details private. You are responsible for activity on your account.</li>
+                <li>You can delete your account at any time in the app under Profile, then Delete account. Deleting
+                    it removes your data as described in the Privacy Policy.</li>
+            </ul>
+        </div>
 
-  <h2>4. Offers and points</h2>
-  <ul>
-    <li>Offers, combos and loyalty points are created and run by individual shops. Each shop decides its own terms, and Turnova is not responsible for them.</li>
-    <li>Points have no cash value and can't be transferred or exchanged for money. Points belong to the shop that issued them.</li>
-    <li>A shop may change or withdraw an offer. If you delete your account, you lose your points.</li>
-  </ul>
+        <div class="card">
+            <h2>Queues and waiting times</h2>
+            <ul>
+                <li>Waiting times in the app are estimates. They can change when other customers are served faster or
+                    slower, or when a shop pauses or delays its queue.</li>
+                <li>Joining a queue does not guarantee a service at a particular time.</li>
+                <li>When your turn is near, please arrive on time. A shop may skip or remove you from the queue if
+                    you don't arrive when called. Shops set their own rules for late and missed turns.</li>
+                <li>If a shop asks whether a walk-in customer can go ahead of you, you can accept or decline. Your
+                    place in the queue is kept either way.</li>
+                <li>Please leave the queue if you can no longer come, so others are not kept waiting.</li>
+            </ul>
+        </div>
 
-  <h2>5. Reviews and ratings</h2>
-  <p>You can rate a visit after it is completed. Please be honest and respectful. Don't post anything abusive, hateful, false, or that shares someone's private information. We may remove reviews that break these rules.</p>
+        <div class="card">
+            <h2>Offers and points</h2>
+            <ul>
+                <li>Offers, combos and points are created and run by individual shops. Each shop decides its own
+                    terms, and Turnova is not responsible for them.</li>
+                <li>Points have no cash value and can't be transferred or exchanged for money. Points belong to the
+                    shop that issued them and do not expire, but they are lost if you delete your account or the shop
+                    stops using points.</li>
+                <li>A shop may change or withdraw an offer.</li>
+            </ul>
+        </div>
 
-  <h2>6. Acceptable use</h2>
-  <p>Don't misuse Turnova. In particular, don't:</p>
-  <ul>
-    <li>join queues you don't intend to attend, or join repeatedly to block other customers;</li>
-    <li>use another person's account or pretend to be someone else;</li>
-    <li>try to break, overload or reverse engineer the app or its servers;</li>
-    <li>use the app for anything illegal.</li>
-  </ul>
+        <div class="card">
+            <h2>Reviews and ratings</h2>
+            <p>You can rate a visit after it is completed. Please be honest and respectful. Don't post anything
+                abusive, hateful or false, or anything that shares someone's private information. We may remove
+                reviews that break these rules.</p>
+        </div>
 
-  <h2>7. Shop owners</h2>
-  <ul>
-    <li>If you list a shop, you confirm you are allowed to run it and that its details, services, prices and offers are accurate.</li>
-    <li>You are responsible for the customer details you can see. Use them only to run your queue and visits, and don't share them or use them for unrelated purposes.</li>
-    <li>If you export customer details, you must handle the file safely and lawfully.</li>
-    <li>You can delete your account and shop at any time. We may give a short recovery period before deletion is permanent, and your shop is hidden from customers during that time.</li>
-  </ul>
+        <div class="card">
+            <h2>Acceptable use</h2>
+            <p>Please don't misuse Turnova. In particular, don't:</p>
+            <ul>
+                <li>join queues you don't plan to attend, or join repeatedly to block other customers;</li>
+                <li>use someone else's account or pretend to be someone else;</li>
+                <li>try to break, overload or reverse engineer the app or its servers;</li>
+                <li>use Turnova for anything illegal.</li>
+            </ul>
+        </div>
 
-  <h2>8. Notifications</h2>
-  <p>With your permission, Turnova sends push notifications about your place in the queue, delays, and offers from shops you have visited. You can turn notifications off in your phone settings or in your preferences.</p>
+        <div class="card">
+            <h2>Shop owners and barbers</h2>
+            <ul>
+                <li>If you list a shop, you confirm that you are allowed to run it and that its details, services,
+                    prices and offers are accurate. New shops are reviewed by the Turnova team before customers can
+                    see them.</li>
+                <li>Customer details you can see are for running your queue and visits only. Don't share them or use
+                    them for anything unrelated.</li>
+                <li>If you export customer details, keep the file safe and handle it lawfully.</li>
+                <li>Owners can delete their account and shop at any time. There is a 30 day recovery period, and the
+                    shop is hidden from customers during that time. After that, deletion is permanent.</li>
+            </ul>
+        </div>
 
-  <h2>9. Ads</h2>
-  <p>Turnova shows ads provided by Google AdMob. We are not responsible for the products or services advertised.</p>
+        <div class="card">
+            <h2>Notifications</h2>
+            <p>With your permission, Turnova sends push notifications about your place in the queue, delays, and offers
+                from shops you have joined. You can turn them off in your phone settings or change when you are
+                alerted in your preferences.</p>
+        </div>
 
-  <h2>10. Suspension and ending your access</h2>
-  <p>We may suspend or remove an account that breaks these terms, harms other users, or puts the service at risk. You may stop using Turnova at any time.</p>
+        <div class="card">
+            <h2>Ads</h2>
+            <p>Turnova shows ads provided by Google AdMob. We are not responsible for the products or services
+                advertised.</p>
+        </div>
 
-  <h2>11. Availability and changes to the service</h2>
-  <p>We try to keep Turnova available, but we can't promise it will always work without interruption or errors. We may change, pause or end features at any time.</p>
+        <div class="card">
+            <h2>Suspension</h2>
+            <p>We may suspend or remove an account that breaks these terms, harms other users or puts the service at
+                risk. You may stop using Turnova at any time.</p>
+        </div>
 
-  <h2>12. Our responsibility</h2>
-  <p>Turnova is provided "as is". To the extent the law allows, we are not responsible for the quality of a shop's services, a shop's decisions about its queue, missed or delayed turns, or losses that arise from using the app. Nothing in these terms limits any right you have under law that can't be limited.</p>
+        <div class="card">
+            <h2>Availability and changes</h2>
+            <p>We try to keep Turnova running, but we can't promise it will always work without interruptions or
+                errors. We may change, pause or end features at any time.</p>
+        </div>
 
-  <h2>13. Changes to these terms</h2>
-  <p>We may update these terms from time to time. The date at the top shows the latest version. If you keep using Turnova after a change, you accept the updated terms.</p>
+        <div class="card">
+            <h2>Our responsibility</h2>
+            <p>Turnova is provided "as is". To the extent the law allows, we are not responsible for the quality of a
+                shop's services, a shop's decisions about its queue, missed or delayed turns, or losses that arise
+                from using the app. Nothing in these terms limits any right you have under law that can't be
+                limited.</p>
+        </div>
 
-  <h2>14. Governing law</h2>
-  <p>These terms are governed by the laws of India. Courts in Chennai, Tamil Nadu have jurisdiction over any dispute, subject to any rights you have under consumer law.</p>
+        <div class="card">
+            <h2>Changes to these terms</h2>
+            <p>If we change these terms, we will update the date at the top of this page. If you keep using Turnova
+                after a change, you accept the updated terms.</p>
+        </div>
 
-  <h2>15. Contact</h2>
-  <p>Questions about these terms: <a href="mailto:support.turnova@gmail.com">support.turnova@gmail.com</a></p>
-</main>
+        <div class="card">
+            <h2>Governing law</h2>
+            <p>These terms are governed by the laws of India. Courts in Chennai, Tamil Nadu have jurisdiction over any
+                dispute, subject to any rights you have under consumer law.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about these terms: <a href="mailto:support.turnova@gmail.com">support.turnova@gmail.com</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>© Nothing Makers · Turnova</footer>
+
 </body>
+
 </html>
